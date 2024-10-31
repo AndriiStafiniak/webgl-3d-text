@@ -6,9 +6,8 @@
   "scripts": {
   "dev": "vite",
   "build": "vite build",
-  "deploy-gh": "vite build && gh-pages -d ./dist",
   "deploy-vercel": "vercel --prod",
-  "deploy": "npm run deploy-gh && npm run deploy-vercel"
+  "deploy": "npm run build && npm run deploy-vercel"
 },
   "devDependencies": {
     "vite": "^5.3.3",
